@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="cs610 programming assignment">
+    <meta name="author" content="weixin tang">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+    <title>cs610 terminal airport</title>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body >
+        <div class="container">
+            <div class="p-4" >
+                Weixin Tang  CS610 Airport Terminal
+            </div>
+            <div class="card d-none" id="summary_card"  >
+                <div class="card-header">
+                    Summary
+                </div>
+                <div class="card-body"  >
+                    <p class="card-text" id="summary_card_body"></p>
+                </div>
+            </div>
+            <div class="card" id="setting_card" >
+                <div class="card-header" id="setting_title" >
+                    Setting (default values have been set)
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col" style="">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Check Duration:</span>
+                                </div>
+                                <input class="form-control" id="checkDur" value="40" min="0" step="1" type="number">
+                            </div>
+                      </div>
+                      <div class="col" style="">
+                      </div>
+                      <div class="w-100" style=""></div>
+                      <div class="col" style="">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Coach Avg Arrival Rate:</span>
+                                </div>
+                                <input class="form-control" id="cArr" value="2" min="0" step="1" type="number">
+                            </div>
+                      </div>
+                      <div class="col" style="">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Coach Avg Service Rate:</span>
+                                </div>
+                                <input class="form-control" id="cSer" value="10" min="0" step="1" type="number">
+                            </div>
+                      </div>
+                      <div class="w-100" style=""></div>
+                      <div class="col" style="">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">First Class Avg Arrival Rate:</span>
+                                </div>
+                                <input class="form-control" id="fArr" value="4" min="0" step="1" type="number">
+                            </div>
+                      </div>
+                      <div class="col" style="">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">First Class Avg Service Rate:</span>
+                                </div>
+                                <input class="form-control" id="fSer"  value="12" min="0" step="1" type="number">
+                            </div>
+                      </div>
+                    </div>
+                    <a class="btn btn-primary text-white" id="startRun" >Start Running</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around row-hl text-center">
+                  <div class="p-4 item-hl">
+                    <div class="row"  >
+                      <div class="col" id="cS_0" style="height:70px; width:140px; border:1px solid #333"></div>
+                      <div class="col" id="cS_1" style="height:70px; width:140px; border:1px solid #333"></div>
+                      <div class="col" id="cS_2" style="height:70px; width:140px; border:1px solid #333"></div>
+                      <div class="col" id="cS_3" style="height:70px; width:140px; border:1px solid #333"></div>
+                    </div>
+                    <div class="d-flex justify-content-center row-hl">
+                      <div class="p-4 item-hl" id="cQ" >
+                      </div>
+                    </div>
+                  </div>
+                <div class="p-4 item-hl">
+                    <div class="row">
+                      <div class="col" id="fS_0" style="height:70px; width:140px; border:1px solid #333"></div>
+                      <div class="col" id="fS_1" style="height:70px; width:140px; border:1px solid #333"></div>
+                      <div class="col" id="fS_2" style="height:70px; width:140px; border:1px solid #333"></div>
+                    </div>
+                    <div class="d-flex justify-content-center row-hl">
+                      <div class="p-4 item-hl" id="fQ" >
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </body>
+
+
+    <script src="https://cdn.cs631njit.me/cs610/cs610p1.js" ></script>
+</html>
